@@ -16,23 +16,23 @@
 }
 
 .nav-list li:hover {
-    border-radius: 1px;
+    border-radius: 2px;
     background-color: black;
 }
 
 .nav-list li:active {
-    border-radius: 5px;
+    border-radius: 2px;
     background-color: black;
     font-size: medium;
 }
 
 .nav-list li:focus {
-    border-radius: 5px;
+    border-radius: 2px;
     background-color: black;
     font-size: medium;
 }
 
 .navbar-default .navbar-nav>.active>a {
-    border-radius: 5px;
+    border-radius: 2px;
     background-color: black;
 }

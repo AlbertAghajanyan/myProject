@@ -1,38 +1,77 @@
 .navbar {
-    font-size: 1.5em;
+    font-size: 1.0em;
     width: 100%;
     font-family: 'Open Sans Condensed', sans-serif;
-    box-shadow: 2px 2px 2px 2px #DFE3EE;
-    margin-bottom: 2px;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0.15), rgb(0, 0, 0)) repeat;
+    box-shadow: 2px 2px 2px 2px #000000;
+    /*background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0.15), rgb(0, 0, 0)) repeat;*/
+    background: #444;
 }
+
+.navbar-colapse {
+    /*padding-right: -15px;*/
+}
+
+
+/*
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+    margin-left: -100px;
+    text-align: center;
+}
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {}
+*/
+
+.homeBtn {
+    background: #444;
+    font-size: 1.3em;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navbar-header>a {
+    color: white;
+}
+
+
+/*
+.homeBtn:hover,
+.homeBtn:active,
+.homeBtn:focus {
+    background: #000000;
+}
+*/
 
 .nav-list li a {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.navbar-default .navbar-nav>li>a {
+    color: #eee;
+}
+
 .navbar-header a {
-    color: black;
+    color: #FFFFFF;
 }
 
 .nav-list li:hover {
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: black;
 }
 
-.nav-list li:active {
-    border-radius: 2px;
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>li>a:focus {
     background-color: black;
-    font-size: medium;
 }
 
+.nav-list li:active,
 .nav-list li:focus {
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: black;
     font-size: medium;
 }
 
 .navbar-default .navbar-nav>.active>a {
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: black;
 }

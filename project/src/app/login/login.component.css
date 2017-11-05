@@ -1,6 +1,15 @@
-/*
 .cont {
     min-height: 400px;
+    margin-top: 0;
+    font-size: 62.5%;
+    width: 100%;
+    height: calc(100% - 56px);
+    position: absolute;
+    font-family: Raleway;
+    background: url(https://newevolutiondesigns.com/images/freebies/city-wallpaper-18.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: 50%;
+    -webkit-font-smoothing: antialiased;
 }
 
 .card-container.card {
@@ -21,7 +30,7 @@
 }
 
 .card {
-    background-color: #F7F7F7;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 25px 30px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -60,7 +69,6 @@
     }
 }
 
-
 @media only screen and (min-width: 500px) {
     .form-signin #inputEmail,
     .form-signin #inputPassword {
@@ -91,20 +99,21 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .form-control:focus {
-    border-color: rgb(104, 145, 162);
+    border-color: rgb(0, 0, 0);
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
 }
 
 .btn-signin {
-    background-color: rgb(63, 76, 107);
+    background: rgba(255, 255, 255, 0.5) !important;
     padding: 0;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 17px;
     height: 36px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -119,12 +128,14 @@
 .btn-signin:hover,
 .btn-signin:active,
 .btn-signin:focus {
-    background-color: rgb(96, 108, 136);
+    background-color: rgba(0, 0, 0, 0.7) !important;
     outline: none;
 }
 
 #remember {
     float: left;
+    color: white;
+    font-size: 15px;
 }
 
 .err {
@@ -171,122 +182,4 @@
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px red;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px red;
-}
-*/
-
-body {
-    width: 100%;
-}
-
-.global {
-    background-image: url("../../images/logImg1.jpg");
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.login {
-    background-color: rgba(230, 231, 255, 0.66);
-    opacity: 1;
-    padding: 3% 2% 2% 2%;
-    box-shadow: 2px 2px 2px 2px rgb(6, 0, 0);
-    width: 30%;
-    margin-top: 8%;
-    margin-bottom: 12%;
-    min-width: 270px;
-    overflow: hidden;
-}
-
-.input {
-    border: solid 1px black;
-}
-
-.icons {
-    background-color: rgba(230, 231, 255, 0);
-}
-
-.textUsernamePassword {
-    color: black;
-    margin-bottom: 5%;
-}
-
-.logText {
-    text-align: center;
-    margin-bottom: 7%;
-    margin-top: -5%;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.loginLine {
-    margin-top: -2%;
-    box-shadow: 1px 1px 1px 1px black;
-}
-
-.btnLog {
-    background-color: rgba(230, 231, 255, 0.66);
-    color: black;
-    border: solid 1px black;
-    display: inline;
-    float: right;
-    width: 30%;
-    margin-top: 0.5%;
-    margin-right: 0;
-}
-
-#btnLogId:hover,
-#btnLogId:active {
-    color: black;
-    background-color: rgb(190, 200, 236);
-    border: solid 1px black
-}
-
-#remember {
-    color: black;
-}
-
-.blink {
-    -webkit-animation: blink 3s linear infinite;
-    animation: blink 2s linear infinite;
-    font-weight: bold;
-    color: #000000;
-}
-
-@-webkit-keyframes blink {
-    0% {
-        color: #060000;
-    }
-    50% {
-        color: #ffffff;
-    }
-    100% {
-        color: #060000;
-    }
-}
-
-@keyframes blink {
-    0% {
-        color: #000000;
-    }
-    50% {
-        color: #ffffff;
-    }
-    100% {
-        color: #060000;
-    }
-}
-
-.alert {
-    color: red;
-    width: auto;
-    height: auto;
-    background-color: rgb(211, 212, 236);
-    display: none;
-    font-size: 14px;
-    margin-top: -5%;
-    margin-bottom: 5%;
 }

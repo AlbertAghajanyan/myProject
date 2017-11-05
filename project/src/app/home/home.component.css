@@ -13,7 +13,7 @@
 }
 
 .rigth {
-    background: yellow;
+    background: #C9C9C9;
     margin-top: 3%;
 }
 
@@ -33,4 +33,9 @@
 
 .name:hover {
     cursor: pointer;
+}
+
+.name>a {
+    color: black;
+    font-size: 17px;
 }

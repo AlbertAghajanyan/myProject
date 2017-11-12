@@ -1,0 +1,45 @@
+<div class="container cont">
+    <div class="card card-container col-md-4  col-sm-6  col-xs-8 col-lg-3" id="loginForm">
+        <!--img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" /-->
+        <form class="form-signin" (ngSubmit)="formSubmit(mail.errors && mail.errors.required, password.errors && password.errors.required, firstName.errors && firstName.errors.required, lastName.errors && lastName.errors.required)">
+
+            <div class="form-group">
+                <label class="label" for="firstName">First name</label>
+                <input type="text" id="inputFirstName" class="form-control " [ngClass]="{'errorInput': !(firstName.valid || firstName.untouched)}" name="firstNameArea" #firstName="ngModel" [(ngModel)]="register.firstName" placeholder="Enter first name" required autofocus
+                    pattern="^[a-zA-Z\s]+$">
+                <div class="md-errors-spacer err" [hidden]="firstName.valid || firstName.untouched">
+                    <div *ngIf="firstName.errors && firstName.errors.required">First name is required</div>
+                    <div *ngIf="firstName.errors && firstName.errors.pattern">First name is invalid</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="lastName">Last name</label>
+                <input type="text" id="inputLastName" class="form-control " [ngClass]="{'errorInput': !(lastName.valid || lastName.untouched)}" name="lastNameArea" #lastName="ngModel" [(ngModel)]="register.lastName" placeholder="Enter last name" required autofocus pattern="^[a-zA-Z\s]+$">
+                <div class="md-errors-spacer err" [hidden]="lastName.valid || lastName.untouched">
+                    <div *ngIf="lastName.errors && lastName.errors.required">Last name is required</div>
+                    <div *ngIf="lastName.errors && lastName.errors.pattern">Last name is invalid</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="firstName">Email</label>
+                <input type="email" id="inputEmail" class="form-control " [ngClass]="{'errorInput': !(mail.valid || mail.untouched)}" name="emailArea" #mail="ngModel" [(ngModel)]="register.mail" placeholder="Enter email address" required autofocus pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                <div class="md-errors-spacer err" [hidden]="mail.valid || mail.untouched">
+                    <div *ngIf="mail.errors && mail.errors.required">Email is required</div>
+                    <div *ngIf="mail.errors && mail.errors.pattern">Email is invalid</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="label" for="firstName">Password</label>
+                <input type="password" id="inputPassword" class="form-control" [ngClass]="{'errorInput': !(password.valid || password.untouched)}" name="pswdArea" #password="ngModel" [(ngModel)]="register.password" placeholder="Enter password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$">
+                <div class="md-errors-spacer err" [hidden]="password.valid || password.untouched">
+                    <div *ngIf="password.errors && password.errors.required">Password is required</div>
+                    <div *ngIf="password.errors && password.errors.pattern">Password is invalid</div>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-signin" type="submit">Register</button>
+            <button routerLink="login" routerLinkActive="active" class="btn btn-primary btn-signin">Login</button>
+        </form>
+    </div>
+</div>

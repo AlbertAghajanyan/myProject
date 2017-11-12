@@ -7,6 +7,7 @@ import { MessageComponent } from './message/message.component';
 import { NotificationComponent } from './notification/notification.component';
 import { FriendComponent } from './friend/friend.component';
 import { ProfileComponent } from './profile/profile.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 export const appRoutes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -15,6 +16,7 @@ export const appRoutes: Routes = [
   { path: 'friend', component: FriendComponent},
   { path: 'profile', component: ProfileComponent},
   {path: 'login', component: LoginComponent },
+  {path: 'login/registration', component: RegistrationComponent },
   { path: '',   redirectTo: 'home', pathMatch: 'full' },
   { path: '*',   redirectTo: 'home', pathMatch: 'full' },
 ];

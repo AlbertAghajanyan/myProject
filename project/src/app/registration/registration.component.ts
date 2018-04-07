@@ -19,6 +19,11 @@ export class RegistrationComponent implements OnInit {
   ngOnInit() {
   }
 
+  clickLogin() {
+    console.log('login');
+    this._router.navigate(['login']);
+  }
+
     /**
    * Try to login
    *

@@ -15,6 +15,19 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { RegistrationComponent } from './registration/registration.component';
+// import { CarouselComponent } from './home/carousel/carousel.component';
+// import { CarouselModule } from 'ngx-bootstrap/carousel';
+
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
+import { HttpModule } from '@angular/http';
+
+import { CookieModule } from 'ngx-cookie';
+
+import { NgxPaginationModule } from 'ngx-pagination';
+
+// import { ModalModule } from 'ngx-modialog';
+// import { BootstrapModalModule } from 'ngx-modialog/plugins/bootstrap';
 
 @NgModule({
   declarations: [
@@ -27,12 +40,18 @@ import { RegistrationComponent } from './registration/registration.component';
     FriendComponent,
     NavigationBarComponent,
     ProfileComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    // CarouselComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    CookieModule.forRoot(),
+    CarouselModule.forRoot(),
+    HttpModule
+    // ModalModule.forRoot(),
+    // BootstrapModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

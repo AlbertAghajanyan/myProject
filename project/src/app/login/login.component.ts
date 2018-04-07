@@ -28,11 +28,16 @@ export class LoginComponent implements OnInit {
    * @param passwordError  password field error
    */
   formSubmit(mailError, passwordError) {
-    if (mailError === null ) {
+    if (mailError === null && passwordError === null) {
       this._router.navigate(['home']);
       console.log('OK');
     } else {
       console.log('Who are you??');
     }
+  }
+
+  clickRegistr() {
+    console.log('registr');
+    this._router.navigate(['registration']);
   }
 }

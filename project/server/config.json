@@ -1,0 +1,36 @@
+{
+    "development": {
+        "db": {
+            "database": "myProject",
+            "host": "localhost",
+            "password": "root",
+            "port": 5432,
+            "user": "postgres"
+        },
+        "server": {
+            "database": "myProject",
+            "host": "localhost",
+            "password": "root",
+            "port": 5432,
+            "user": "postgres"
+        },
+        "transportLevel": "debug"
+    },
+    "production": {
+        "db": {
+            "database": "myProject",
+            "host": "localhost",
+            "password": "root",
+            "port": 5432,
+            "user": "postgres"
+        },
+        "server": {
+            "database": "myProject",
+            "host": "localhost",
+            "password": "root",
+            "port": 5432,
+            "user": "postgres"
+        },
+        "transportLevel": "error"
+    }
+}

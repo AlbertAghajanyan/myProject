@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  private isShowCarusel = false;
+  private clickedObject: any;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  private showCarousel(object: any) {
+    this.isShowCarusel = true;
+    // this.clickedObject = object;
+  }
+
+  private onChanged() {
+    this.isShowCarusel = false;
   }
 
 }

@@ -16,7 +16,7 @@ export const appRoutes: Routes = [
   { path: 'friend', component: FriendComponent},
   { path: 'profile', component: ProfileComponent},
   {path: 'login', component: LoginComponent },
-  {path: 'login/registration', component: RegistrationComponent },
+  {path: 'registration', component: RegistrationComponent },
   { path: '',   redirectTo: 'home', pathMatch: 'full' },
   { path: '*',   redirectTo: 'home', pathMatch: 'full' },
 ];

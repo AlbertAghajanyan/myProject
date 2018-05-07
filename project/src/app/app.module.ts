@@ -52,6 +52,7 @@ import { BootstrapModalModule } from 'ngx-modialog/plugins/bootstrap';
     HttpModule,
     ModalModule.forRoot(),
     BootstrapModalModule
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
